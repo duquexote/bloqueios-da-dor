@@ -1,0 +1,105 @@
+.footer {
+  background: var(--c-black);
+  color: var(--c-gray-muted);
+}
+
+.footer__top-rule {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--c-gold), transparent);
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 3rem;
+  padding-block: 3.5rem;
+}
+
+/* Brand */
+.footer__logo {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  color: var(--c-white);
+  margin-bottom: 0.5rem;
+}
+.footer__tagline {
+  font-size: var(--text-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1.8;
+}
+
+/* Shared col title */
+.footer__col-title {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--c-gold);
+  margin-bottom: 1.25rem;
+}
+
+/* Links */
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.footer__link {
+  font-size: var(--text-sm);
+  color: var(--c-gray-muted);
+  transition: color var(--t-fast);
+}
+.footer__link:hover { color: var(--c-white); }
+
+/* Contact */
+.footer__wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--c-gold);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  margin-bottom: 1.25rem;
+  transition: opacity var(--t-fast);
+}
+.footer__wa:hover { opacity: 0.8; }
+.footer__address {
+  font-size: var(--text-xs);
+  line-height: 1.9;
+}
+
+/* Bottom bar */
+.footer__bottom {
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.footer__bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding-block: 1.25rem;
+}
+.footer__copy {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.25);
+}
+.footer__legal {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.2);
+}
+.footer__legal-link {
+  color: rgba(255,255,255,0.35);
+  transition: color var(--t-fast);
+}
+.footer__legal-link:hover { color: var(--c-white); }
+
+@media (max-width: 768px) {
+  .footer__grid { grid-template-columns: 1fr; gap: 2rem; }
+  .footer__bottom-inner { flex-direction: column; align-items: flex-start; }
+}

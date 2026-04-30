@@ -1,0 +1,155 @@
+.docentes__header {
+  max-width: 640px;
+  margin-bottom: 3.5rem;
+}
+
+.docentes__sub {
+  color: var(--c-gray-muted);
+  font-size: var(--text-base);
+  line-height: 1.7;
+  margin-top: 0.75rem;
+}
+
+.docentes__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Card */
+.doctor-card {
+  background: var(--c-black-card);
+  border: 1px solid rgba(74, 156, 232, 0.12);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 1.5rem;
+  position: relative;
+  transition: border-color var(--t-base), transform var(--t-base);
+}
+
+.doctor-card:hover {
+  border-color: rgba(74, 156, 232, 0.4);
+  transform: translateY(-3px);
+}
+
+/* Role badge */
+.doctor-card__role {
+  position: absolute;
+  top: -1px;
+  right: 1.25rem;
+  background: var(--c-gold);
+  color: var(--c-white);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.25em 0.85em;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+}
+
+/* Photo area */
+.doctor-card__photo-wrap {
+  margin-bottom: 1.25rem;
+}
+
+/* Placeholder for when photo is not yet provided */
+.doctor-card__placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  background: #0d1a35;
+  border: 1.5px dashed rgba(74, 156, 232, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.doctor-card__initials {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: var(--c-gold);
+  line-height: 1;
+  opacity: 0.7;
+}
+
+.doctor-card__placeholder-label {
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(74, 156, 232, 0.4);
+}
+
+/* When real photo is supplied */
+.doctor-card__photo {
+  width: 100%;
+  aspect-ratio: 5 / 6;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
+/* Info */
+.doctor-card__info {}
+
+.doctor-card__name {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--c-white);
+  margin-bottom: 0.3rem;
+  line-height: 1.2;
+}
+
+.doctor-card__crm {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--c-gold);
+  margin-bottom: 0.3rem;
+}
+
+.doctor-card__specialty {
+  font-size: var(--text-sm);
+  color: var(--c-gray-light);
+  margin-bottom: 0.85rem;
+  line-height: 1.4;
+}
+
+.doctor-card__creds {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.doctor-card__creds li {
+  font-size: 0.78rem;
+  color: var(--c-gray-muted);
+  line-height: 1.5;
+  padding-left: 0.75rem;
+  position: relative;
+}
+
+.doctor-card__creds li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--c-gold);
+}
+
+@media (max-width: 1024px) {
+  .docentes__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .docentes__grid {
+    grid-template-columns: 1fr;
+  }
+}
