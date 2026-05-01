@@ -6,8 +6,9 @@ const doctors = [
     initials: 'JL',
     name: 'Dr. José Luiz de Campos',
     crm: 'CRM 68663-SP',
+    rqe: '49468',
     role: 'Coordenador',
-    specialty: 'Médico Anestesiologista',
+    specialty: 'Anestesiologista',
     credentials: [
       'Chefe do Depto. de Dor — Hospital Vera Cruz (Campinas/SP)',
       'Título FIPP — World Institute of Pain, Cleveland/EUA',
@@ -20,6 +21,7 @@ const doctors = [
     initials: 'MS',
     name: 'Dr. May Silvio Silveira',
     crm: 'CRM 51873-RS',
+    rqe: '40134',
     role: 'Coordenador',
     specialty: 'Ortopedia e Traumatologia',
     credentials: [
@@ -33,6 +35,7 @@ const doctors = [
     initials: 'WV',
     name: 'Dr. Walter Viterbo da Silva',
     crm: 'CRM 11188-BA',
+    rqe: '6973',
     role: null,
     specialty: 'Anestesiologia, Acupuntura e Medicina da Dor',
     credentials: [
@@ -46,6 +49,7 @@ const doctors = [
     initials: 'AM',
     name: 'Dr. Alexandre Mio Pos',
     crm: 'CRM 29907-MG',
+    rqe: '50773',
     role: null,
     specialty: 'Anestesiologia',
     credentials: [
@@ -60,6 +64,7 @@ const doctors = [
     initials: 'YM',
     name: 'Dr. Yran Ferreira de Miranda',
     crm: 'CRM 21939-MG',
+    rqe: '36832',
     role: null,
     specialty: 'Ortopedia e Medicina Regenerativa',
     credentials: [
@@ -73,8 +78,9 @@ const doctors = [
     initials: 'FA',
     name: 'Dr. Felipe Duarte Augusto',
     crm: 'CRM 61140-MG',
+    rqe: '44754',
     role: null,
-    specialty: 'Neurocirurgia e Dor',
+    specialty: 'Neurocirurgia e Medicina da Dor',
     credentials: [
       'Especialista em Dor e Cuidados Paliativos (PUC-MG)',
       'Cirurgia Endoscópica da Coluna — Hospital Albert Einstein',
@@ -105,7 +111,7 @@ function DoctorCard({ doctor, delay }) {
 
       <div className="doctor-card__info">
         <h3 className="doctor-card__name">{doctor.name}</h3>
-        <p className="doctor-card__crm">{doctor.crm}</p>
+        <p className="doctor-card__crm">{doctor.crm}{doctor.rqe && ` · RQE Nº ${doctor.rqe}`}</p>
         <p className="doctor-card__specialty">{doctor.specialty}</p>
         <ul className="doctor-card__creds">
           {doctor.credentials.map((c, i) => (

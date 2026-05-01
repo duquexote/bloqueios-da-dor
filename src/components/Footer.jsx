@@ -16,7 +16,9 @@ export default function Footer() {
 
         {/* Brand */}
         <div className="footer__brand">
-          <p className="footer__logo">Bloqueios da Dor</p>
+          <a href="#hero">
+            <img src="/logo-branca.svg" alt="Bloqueios da Dor" className="footer__logo-img" />
+          </a>
           <p className="footer__tagline">Imersão Presencial · Salvador, BA</p>
           <p className="footer__tagline">03 e 04 de julho de 2026</p>
         </div>

@@ -3,6 +3,20 @@
   padding-top: calc(var(--nav-h) + 4rem);
   padding-bottom: 5rem;
   overflow: hidden;
+  background-image: url('/equipe_medica_mobile.webp');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+/* Overlay azul marinho para legibilidade */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 22, 41, 0.8);
+  z-index: 0;
+  pointer-events: none;
 }
 
 /* Grain texture overlay */
@@ -26,7 +40,10 @@
 }
 
 /* ── Left ── */
-.hero__content { display: flex; flex-direction: column; }
+.hero__content {
+  display: flex;
+  flex-direction: column;
+}
 
 .hero__eyebrow {
   font-size: var(--text-xs);
@@ -42,14 +59,17 @@
   font-size: var(--text-hero);
   font-weight: 600;
   line-height: 1.08;
-  color: var(--c-black);
+  color: var(--c-white);
   margin-bottom: 1.5rem;
 }
-.hero__h1--accent { color: var(--c-gold); }
+
+.hero__h1--accent {
+  color: var(--c-gold);
+}
 
 .hero__sub {
   font-size: var(--text-lg);
-  color: #444;
+  color: rgba(255, 255, 255, 0.82);
   line-height: 1.65;
   max-width: 520px;
   margin-bottom: 2rem;
@@ -62,6 +82,7 @@
   gap: 0.75rem;
   margin-bottom: 2rem;
 }
+
 .hero__badge {
   display: inline-flex;
   align-items: center;
@@ -75,10 +96,11 @@
   padding: 0.45em 1.1em;
   border-radius: 99px;
 }
+
 .hero__badge--outline {
   background: transparent;
-  border: 1.5px solid var(--c-black);
-  color: var(--c-black);
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  color: var(--c-white);
 }
 
 /* CTAs */
@@ -89,6 +111,7 @@
   flex-wrap: wrap;
   margin-bottom: 2.5rem;
 }
+
 .hero__link {
   display: inline-flex;
   align-items: center;
@@ -101,7 +124,10 @@
   border-bottom: 1px solid transparent;
   transition: border-color var(--t-fast);
 }
-.hero__link:hover { border-color: var(--c-gold); }
+
+.hero__link:hover {
+  border-color: var(--c-gold);
+}
 
 /* Stats row */
 .hero__stats {
@@ -109,25 +135,32 @@
   align-items: center;
   gap: 1.5rem;
 }
-.hero__stat { display: flex; flex-direction: column; }
+
+.hero__stat {
+  display: flex;
+  flex-direction: column;
+}
+
 .hero__stat-value {
   font-family: var(--font-display);
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 1;
-  color: var(--c-black);
+  color: var(--c-white);
 }
+
 .hero__stat-label {
   font-size: var(--text-xs);
-  color: var(--c-gray-muted);
+  color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-top: 0.25rem;
 }
+
 .hero__stat-divider {
   width: 1px;
   height: 40px;
-  background: rgba(0,0,0,0.15);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 /* ── Right / Visual ── */
@@ -137,6 +170,14 @@
   align-items: center;
   justify-content: center;
   height: 480px;
+}
+
+/* Team photo background (mobile fallback) */
+@media (min-width: 768px) {
+  .hero {
+    background-image: url('/equipe_medica_desktop.webp');
+    background-position: right center;
+  }
 }
 
 /* Main circle */
@@ -151,6 +192,7 @@
   animation: float 5s ease-in-out infinite;
   position: relative;
 }
+
 /* Logo image inside circle */
 .hero__logo-icon {
   width: 78%;
@@ -172,6 +214,7 @@
   white-space: nowrap;
   border-left: 3px solid var(--c-gold);
 }
+
 .hfc__icon {
   display: flex;
   align-items: center;
@@ -179,25 +222,43 @@
   color: var(--c-gold);
   flex-shrink: 0;
 }
+
 .hfc__value {
   font-size: var(--text-sm);
   font-weight: 600;
   color: var(--c-black);
   line-height: 1.2;
 }
+
 .hfc__label {
   font-size: var(--text-xs);
   color: var(--c-gray-muted);
 }
 
-.hero__floating-card--1 { top: 10%; left: -8%; }
-.hero__floating-card--2 { bottom: 20%; left: -12%; }
-.hero__floating-card--3 { top: 25%; right: -6%; }
+.hero__floating-card--1 {
+  top: 10%;
+  left: -8%;
+}
+
+.hero__floating-card--2 {
+  bottom: 20%;
+  left: -12%;
+}
+
+.hero__floating-card--3 {
+  top: 25%;
+  right: -6%;
+}
 
 /* ── Responsive ── */
 @media (max-width: 1024px) {
-  .hero__floating-card--1 { left: 0; }
-  .hero__floating-card--2 { left: 0; }
+  .hero__floating-card--1 {
+    left: 0;
+  }
+
+  .hero__floating-card--2 {
+    left: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -205,8 +266,20 @@
     padding-top: calc(var(--nav-h) + 2rem);
     padding-bottom: 3rem;
   }
-  .hero__grid { grid-template-columns: 1fr; }
-  .hero__visual { display: none; }
-  .hero__h1 { line-height: 1.15; }
-  .hero__sub { font-size: var(--text-base); }
+
+  .hero__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__visual {
+    display: none;
+  }
+
+  .hero__h1 {
+    line-height: 1.15;
+  }
+
+  .hero__sub {
+    font-size: var(--text-base);
+  }
 }

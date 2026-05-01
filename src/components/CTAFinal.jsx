@@ -49,7 +49,7 @@ export default function CTAFinal() {
           <Timer size={13} strokeWidth={2} className="cta-final__note-icon" />
           Inscrições com valor especial encerram em{' '}
           <strong>20 de junho de 2026</strong>. Após essa data, o investimento
-          sobe para R$9.800.
+          sobe para R$9.800. <strong>E se deixar para a última hora, o valor no dia fica R$11.800.</strong>
           <br />
           Dúvidas?{' '}
           <a href="https://wa.me/5571999295613" target="_blank" rel="noopener noreferrer">

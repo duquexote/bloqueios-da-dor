@@ -31,7 +31,8 @@ export default function Navbar() {
       <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
         <div className="navbar__inner container">
           <a href="#hero" className="navbar__logo" onClick={handleLinkClick}>
-            <img src="/logo.svg" alt="Bloqueios da Dor" className="navbar__logo-img" />
+            <img src="/logo-branca.svg" alt="Bloqueios da Dor" className="navbar__logo-img navbar__logo-img--white" />
+            <img src="/logo.svg"        alt="Bloqueios da Dor" className="navbar__logo-img navbar__logo-img--color" />
           </a>
 
           <ul className="navbar__links">

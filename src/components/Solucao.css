@@ -14,12 +14,24 @@
   line-height: 1.75;
   margin-bottom: 2rem;
 }
-.solucao__body strong { color: var(--c-black); }
+
+.solucao__body strong {
+  color: var(--c-black);
+}
 
 /* Pull quote side */
 .solucao__quote {
   padding-top: 3.5rem;
 }
+
+.solucao__gif {
+  width: 60%;
+  border-radius: var(--radius-md);
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: block;
+}
+
 .solucao__blockquote {
   font-family: var(--font-display);
   font-style: italic;
@@ -39,12 +51,14 @@
   font-size: var(--text-sm);
   margin-bottom: 3rem;
 }
+
 .solucao__quote-line {
   width: 32px;
   height: 1px;
   background: var(--c-gold);
   flex-shrink: 0;
 }
+
 
 .solucao__pillars {
   display: flex;
@@ -53,7 +67,13 @@
   border-left: 2px solid var(--c-gold);
   padding-left: 1.5rem;
 }
-.solucao__pillar { display: flex; align-items: baseline; gap: 0.75rem; }
+
+.solucao__pillar {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
 .solucao__pillar-num {
   font-family: var(--font-display);
   font-size: 2rem;
@@ -61,6 +81,7 @@
   color: var(--c-black);
   line-height: 1;
 }
+
 .solucao__pillar-label {
   font-size: var(--text-sm);
   color: var(--c-gray-muted);
@@ -69,6 +90,12 @@
 }
 
 @media (max-width: 900px) {
-  .solucao__grid { grid-template-columns: 1fr; gap: 3rem; }
-  .solucao__quote { padding-top: 0; }
+  .solucao__grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .solucao__quote {
+    padding-top: 0;
+  }
 }

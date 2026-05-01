@@ -72,6 +72,12 @@ export default function Solucao() {
               </div>
             ))}
           </div>
+          <img
+            src="/aplicacao_joelho.gif"
+            alt="Aplicação de bloqueio guiado por ultrassom no joelho"
+            className="solucao__gif"
+          />
+
         </div>
 
       </div>
