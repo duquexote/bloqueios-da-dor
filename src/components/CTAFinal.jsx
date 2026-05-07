@@ -36,7 +36,7 @@ export default function CTAFinal() {
         </p>
 
         <a
-          href="https://wa.me/5571999295613"
+          href="https://wa.me/5571999295613?text=Vi%20o%20v%C3%ADdeo%20de%20Dr%20Walter%20e%20quero%20informa%C3%A7%C3%B5es%20sobre%20a%20imers%C3%A3o%20Bloqueios%20da%20Dor"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn--gold btn--lg cta-final__btn fade-up delay-3"
@@ -52,7 +52,7 @@ export default function CTAFinal() {
           sobe para R$9.800. <strong>E se deixar para a última hora, o valor no dia fica R$11.800.</strong>
           <br />
           Dúvidas?{' '}
-          <a href="https://wa.me/5571999295613" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/5571999295613?text=Vi%20o%20v%C3%ADdeo%20de%20Dr%20Walter%20e%20quero%20informa%C3%A7%C3%B5es%20sobre%20a%20imers%C3%A3o%20Bloqueios%20da%20Dor" target="_blank" rel="noopener noreferrer">
             WhatsApp: (71) 9 9929-5613
           </a>
         </p>

@@ -98,7 +98,7 @@ export default function FAQ() {
         <div className="faq__footer fade-up delay-2">
           <p>Não encontrou sua resposta?</p>
           <a
-            href="https://wa.me/5571999295613"
+            href="https://wa.me/5571999295613?text=Vi%20o%20v%C3%ADdeo%20de%20Dr%20Walter%20e%20quero%20informa%C3%A7%C3%B5es%20sobre%20a%20imers%C3%A3o%20Bloqueios%20da%20Dor"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn--outline-gold"
