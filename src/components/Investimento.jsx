@@ -77,7 +77,7 @@ export default function Investimento() {
                 <p className="pricing-card__installment">{tier.installment}</p>
                 {isActive ? (
                   <a
-                    href="https://wa.me/5571999295613?text=Vi%20o%20v%C3%ADdeo%20de%20Dr%20Walter%20e%20quero%20informa%C3%A7%C3%B5es%20sobre%20a%20imers%C3%A3o%20Bloqueios%20da%20Dor"
+                    href="https://form.respondi.app/Us1SxLYJ"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn--gold btn--full"
@@ -107,12 +107,12 @@ export default function Investimento() {
         <p className="investimento__contact fade-up delay-3">
           Dúvidas sobre pagamento?{' '}
           <a
-            href="https://wa.me/5571999295613?text=Vi%20o%20v%C3%ADdeo%20de%20Dr%20Walter%20e%20quero%20informa%C3%A7%C3%B5es%20sobre%20a%20imers%C3%A3o%20Bloqueios%20da%20Dor"
+            href="https://form.respondi.app/Us1SxLYJ"
             target="_blank"
             rel="noopener noreferrer"
             className="investimento__wa-link"
           >
-            Fale no WhatsApp: (71) 9 9929-5613
+            Fale com nossa equipe
           </a>
         </p>
       </div>

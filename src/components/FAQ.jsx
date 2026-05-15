@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: 'Quantas vagas ainda estão disponíveis?',
-    a: 'A turma tem no máximo 20 participantes. As vagas são preenchidas por ordem de inscrição e pagamento. Entre em contato pelo WhatsApp para verificar a disponibilidade atual.',
+    a: 'A turma tem no máximo 20 participantes. As vagas são preenchidas por ordem de inscrição e pagamento. Entre em contato conosco para verificar a disponibilidade atual.',
   },
   {
     q: 'Posso parcelar minha inscrição?',
@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: 'Onde posso tirar mais dúvidas?',
-    a: 'Fale diretamente com a equipe pelo WhatsApp: (71) 9 9929-5613. Respondemos de segunda a sexta, das 9h às 18h.',
+    a: 'Fale diretamente com a equipe de suporte para tirar suas dúvidas.',
   },
 ]
 
@@ -98,12 +98,12 @@ export default function FAQ() {
         <div className="faq__footer fade-up delay-2">
           <p>Não encontrou sua resposta?</p>
           <a
-            href="https://wa.me/5571999295613?text=Vi%20o%20v%C3%ADdeo%20de%20Dr%20Walter%20e%20quero%20informa%C3%A7%C3%B5es%20sobre%20a%20imers%C3%A3o%20Bloqueios%20da%20Dor"
+            href="https://form.respondi.app/Us1SxLYJ"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn--outline-gold"
           >
-            Falar no WhatsApp
+            Falar com Suporte
           </a>
         </div>
       </div>

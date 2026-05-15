@@ -75,7 +75,7 @@ export default function ParaQuem() {
 
         <div className="para-quem__cta fade-up delay-3">
           <a
-            href="https://wa.me/5571999295613?text=Vi%20o%20v%C3%ADdeo%20de%20Dr%20Walter%20e%20quero%20informa%C3%A7%C3%B5es%20sobre%20a%20imers%C3%A3o%20Bloqueios%20da%20Dor"
+            href="https://form.respondi.app/Us1SxLYJ"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn--gold btn--lg"
