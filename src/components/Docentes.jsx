@@ -32,6 +32,20 @@ const doctors = [
     photo: '/may_silvio.webp',
   },
   {
+    initials: 'FA',
+    name: 'Dr. Felipe Duarte Augusto',
+    crm: 'CRM 61140-MG',
+    rqe: '44754',
+    role: 'Coordenador',
+    specialty: 'Neurocirurgia e Medicina da Dor',
+    credentials: [
+      'Especialista em Dor e Cuidados Paliativos (PUC-MG)',
+      'Cirurgia Endoscópica da Coluna — Hospital Albert Einstein',
+      'Título de Especialista em Dor pela AMB',
+    ],
+    photo: '/felipe_duarte.webp',
+  },
+  {
     initials: 'WV',
     name: 'Dr. Walter Viterbo da Silva',
     crm: 'CRM 11188-BA',
@@ -75,18 +89,14 @@ const doctors = [
     photo: '/yran_ferreira.webp',
   },
   {
-    initials: 'FA',
-    name: 'Dr. Felipe Duarte Augusto',
-    crm: 'CRM 61140-MG',
-    rqe: '44754',
+    initials: 'IL',
+    name: 'Dr. Ícaro Lessa',
+    crm: 'CRM 35741',
+    rqe: '28064',
     role: null,
-    specialty: 'Neurocirurgia e Medicina da Dor',
-    credentials: [
-      'Especialista em Dor e Cuidados Paliativos (PUC-MG)',
-      'Cirurgia Endoscópica da Coluna — Hospital Albert Einstein',
-      'Título de Especialista em Dor pela AMB',
-    ],
-    photo: '/felipe_duarte.webp',
+    specialty: 'Médico Ultrassonografista',
+    credentials: [],
+    photo: '/icaro_lessa.jpeg',
   },
 ]
 
@@ -146,7 +156,7 @@ export default function Docentes() {
             Aprenda com quem faz. Todo dia.
           </h2>
           <p className="docentes__sub">
-            6 dos maiores especialistas do Brasil em medicina intervencionista da dor —
+            7 dos maiores especialistas do Brasil em medicina intervencionista da dor —
             com credenciais nacionais e internacionais, experiência clínica real e décadas
             de prática cirúrgica e ambulatorial.
           </p>

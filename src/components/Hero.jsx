@@ -35,7 +35,7 @@ export default function Hero() {
 
           <p className="hero__sub fade-up delay-2">
             A única imersão presencial do Brasil onde você pratica bloqueios guiados
-            por ultrassom em quadril, joelho e tornozelo — ao lado de 5 especialistas
+            por ultrassom em quadril, joelho e tornozelo — ao lado de 6 especialistas
             de referência nacional.
           </p>
 
@@ -76,7 +76,7 @@ export default function Hero() {
             </div>
             <div className="hero__stat-divider" aria-hidden="true" />
             <div className="hero__stat">
-              <span className="hero__stat-value">6</span>
+              <span className="hero__stat-value">7</span>
               <span className="hero__stat-label">especialistas</span>
             </div>
           </div>
@@ -103,7 +103,7 @@ export default function Hero() {
           <div className="hero__floating-card hero__floating-card--2">
             <span className="hfc__icon"><Stethoscope size={20} strokeWidth={1.5} /></span>
             <div>
-              <p className="hfc__value">6 Docentes</p>
+              <p className="hfc__value">7 Docentes</p>
               <p className="hfc__label">referência nacional</p>
             </div>
           </div>
